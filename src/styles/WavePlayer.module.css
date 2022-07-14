@@ -1,0 +1,63 @@
+.wave {
+    height: 64px;
+    margin: 0 auto;
+    margin-top: 50px;
+    position: relative;
+    width: 80%;
+    overflow: hidden;
+    color:red
+}
+.wave wave {
+    overflow: hidden;
+}
+.ward {
+    outline: none;
+    background: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.ward:hover {
+    outline: none;
+    color: var(--primary)
+}
+
+.control {
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.playPause {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: var(--primary);
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    font-size: 32px;
+    color: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play {
+    position: relative;
+}
+
+.currentTime,
+.durationTime {
+    margin: 0 10%;
+    font-family: monospace;
+    font-size: 16px;
+}
+
+.currentTime {
+    /*margin-left: 25px;*/
+}
