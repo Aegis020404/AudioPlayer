@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="631a01dc-4028-43e4-8cb1-3327c1bbb022" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/FilterListMusic.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ListMusic.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/store/listMusic-reducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/styles/FilterListMusic.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AudioPlayer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WavePlayer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WavePlayer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/FilterListMusic.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/FilterListMusic.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ListMusic.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ListMusic.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WavePlayer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WavePlayer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/audioPlayer-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/audioPlayer-reducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/Home.module.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/listMusic-reducer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styles/FilterListMusic.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/FilterListMusic.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/WavePlayer.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/WavePlayer.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/audioplayer.module.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +77,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1657807137207</updated>
-      <workItem from="1657807138972" duration="34035000" />
+      <workItem from="1657807138972" duration="49418000" />
     </task>
     <servers />
   </component>

@@ -14,3 +14,10 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.pointer {
+  cursor: pointer;
+}
+.pointer:hover {
+  font-weight: bold;
+}
