@@ -4,9 +4,8 @@ import cl from "../styles/WavePlayer.module.css"
 import {useCallback} from "react";
 import audioReducer from "../store/audioPlayer-reducer";
 
-const ListMusic = () => {
+const ListMusic = ({list,duration}) => {
     const audio = useRef()
-    const {list,duration} = useSelector(state => state.audioReducer)
     const dispatch = useDispatch()
     const setMusic = useCallback((el) => dispatch({type: 'SET-MUSIC', el}), [dispatch])
 

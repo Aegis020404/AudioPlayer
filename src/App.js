@@ -1,22 +1,19 @@
 import WavePlayer from "./components/WavePlayer";
 import ListMusic from "./components/ListMusic";
 import FilterListMusic from "./components/FilterListMusic";
+import {useSelector} from "react-redux";
 
 function App() {
 
-    const calculateTime = (secs) => {
-        const minutes = ~~(secs / 60)
-            , returnedMinutes = minutes < 10 ? `0${minutes}` : minutes
-            , seconds = secs % 60
-            , returnedSeconds = seconds < 10 ? `0${seconds}` : seconds
-        return `${returnedMinutes}:${returnedSeconds}`
-    }
+    const {currentTime, isPlaying, duration, currentMusic} = useSelector(state => state.audioReducer)
+    const {list} = useSelector(state => state.audioReducer)
+
 
   return (
     <div className="App">
-        <WavePlayer calculateTime={calculateTime} />
+        <WavePlayer currentTime={currentTime} isPlaying={isPlaying} duration={duration} currentMusic={currentMusic}/>
         <FilterListMusic/>
-        <ListMusic/>
+        <ListMusic duration={duration} list={list}/>
     </div>
   );
 }

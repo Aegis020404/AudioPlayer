@@ -65,39 +65,24 @@ const compare = (a, b) => a < b ? -1 : a > b ? 1 : 0
 
 function audioReducer(state = initialState, action) {
     switch (action.type) {
-        case 'SET-IS-PLAYING':
-            return {...state, isPlaying: action.value}
+        case 'SET-IS-PLAYING': return {...state, isPlaying: action.value}
 
-        case 'SET-DURATION':
-            return {...state, duration: action.value}
+        case 'SET-DURATION': return {...state, duration: action.value}
 
-        case 'SET-CURRENT-TIME':
-            return {...state, currentTime: action.value}
+        case 'SET-CURRENT-TIME': return {...state, currentTime: action.value}
 
         case 'SET-MUSIC':
-            return {
-                ...state,
-                currentMusic: action.el,
-                duration: 0,
-                currentTime: 0,
-                isPlaying: false,
+            return {...state, currentMusic: action.el, duration: 0, currentTime: 0, isPlaying: false,
                 list: state.list.map(el => el.id === action.el.id ? {...el, selected: true} : {...el, selected: false})
             }
 
         case 'SET-PREV-NEXT-MUSIC': {
+            console.log(state.list.map((el,i)=>el.id + ' ' + el.selected))
             let side = 'next' === action.value ? 1 : 0
             let index = state.list.map(el => el.id).indexOf(action.el.id)
             index = side ? index + 1 : index - 1
             let sLIsi = state.list[index] ? index : side ? 0 : state.list.length - 1
-            // console.log(index)
-            // console.log(sLIsi)
-            // console.log(state.list[sLIsi])
-            return {
-                ...state,
-                currentMusic: state.list[sLIsi],
-                currentTime: 0,
-                duration: 0,
-                isPlaying: false,
+            return {...state, currentMusic: state.list[sLIsi], currentTime: 0, duration: 0, isPlaying: false,
                 list: state.list.map(el => el.id === sLIsi ? {...el, selected: true} : {...el, selected: false})
             }
         }
@@ -118,8 +103,9 @@ function audioReducer(state = initialState, action) {
                     break;
                 case 'nameZ': arr.sort((a, b) => compare(b.name, a.name))
             }
-            arr = arr.map((el, i) => ({...el, id: i}))
             let index = arr.map(el => el.id).indexOf(state.currentMusic.id)
+            arr = arr.map((el, i) => ({...el, id: i}))
+            console.log(index)
             return {...state, list: arr, currentMusic: {...state.currentMusic, id: index }}
         }
     }
